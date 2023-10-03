@@ -1,8 +1,8 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Divider from "@/components/Divider";
 
-// import the icons you need
 import {
   faLock,
   faBriefcase,
@@ -10,23 +10,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
-import Image from "next/image";
 
 const Services = () => {
   return (
-    <div
-      id="services"
-      className="flex flex-col items-center justify-center w-full space-y-5 border-2 border-red-500 h-fit"
-    >
+    <section className="flex flex-col items-center justify-center w-full space-y-5 h-fit">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         SERVIÇOS
       </h1>
 
       <div className="flex w-full">
         <div className="flex justify-center w-full space-x-5">
-          <div class="group h-96 w-80 [perspective:1000px]">
-            <div class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
+          <div className="group h-96 w-80 [perspective:1000px]">
+            <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
                 <FontAwesomeIcon
                   icon={faLightbulb}
                   className="p-5 mt-5 text-4xl text-[#A48661]"
@@ -35,8 +31,8 @@ const Services = () => {
                   ESTRATÉGIA DE GOVERNANÇA
                 </h2>
               </div>
-              <div class="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] ">
-                <div class="flex min-h-full flex-col items-center justify-center">
+              <div className="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] ">
+                <div className="flex flex-col items-center justify-center min-h-full">
                   <p className="text-[#A48661] p-2 text-center">
                     Promovemos a operação, auxílio e direcionamento da
                     governança, estratégia e práticas de segurança dentro da sua
@@ -48,9 +44,9 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div class="group h-96 w-80 [perspective:1000px]">
-            <div class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
+          <div className="group h-96 w-80 [perspective:1000px]">
+            <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
                 <FontAwesomeIcon
                   icon={faLock}
                   className="p-5 mt-5 text-4xl text-[#A48661]"
@@ -59,8 +55,8 @@ const Services = () => {
                   AVALIAÇÕES E TESTES DE SEGURANÇA
                 </h2>
               </div>
-              <div class="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div class="flex min-h-full flex-col items-center justify-center">
+              <div className="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="flex flex-col items-center justify-center min-h-full">
                   <p className="text-[#A48661] p-2 text-center">
                     Estratégia e Governança Avaliamos o estado de segurança de
                     ativos da sua empresa através dos diferentes tipos de teste
@@ -71,9 +67,9 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div class="group h-96 w-80 [perspective:1000px]">
-            <div class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <div class="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
+          <div className="group h-96 w-80 [perspective:1000px]">
+            <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
                 <FontAwesomeIcon
                   icon={faBriefcase}
                   className="p-5 mt-5 text-4xl text-[#A48661]"
@@ -82,8 +78,8 @@ const Services = () => {
                   TREIAMENTO, EDUCAÇÃO E CONSCIENTIZAÇÃO
                 </h2>
               </div>
-              <div class="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <div class="flex min-h-full flex-col items-center justify-center">
+              <div className="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="flex flex-col items-center justify-center min-h-full">
                   <p className="text-[#A48661] p-2 text-center">
                     Realizamos treinamentos sob demanda com intuito de capacitar
                     as pessoas colaboradoras em temas tão essenciais nos dias de
@@ -97,9 +93,9 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div class="group h-96 w-80 [perspective:1000px]">
-        <div class="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-          <div class="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
+      <div className="group h-96 w-80 [perspective:1000px]">
+        <div className="relative h-full w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+          <div className="absolute inset-0 flex flex-col items-center justify-start space-y-10 bg-[#1B1B1B] rounded-xl">
             <FontAwesomeIcon
               icon={faArrowTrendUp}
               className="p-5 mt-5 text-4xl text-[#A48661]"
@@ -108,8 +104,8 @@ const Services = () => {
               ANÁLISE DE VULNERABILIDADES
             </h2>
           </div>
-          <div class="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-            <div class="flex min-h-full flex-col items-center justify-center">
+          <div className="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+            <div className="flex flex-col items-center justify-center min-h-full">
               <p className="text-[#A48661] p-2 text-center">
                 Avaliamos o estado de segurança de ativos da sua empresa através
                 dos diferentes tipos de teste de segurança, atuando como
@@ -120,7 +116,9 @@ const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+      <p id="formations"></p>
+      <Divider />
+    </section>
   );
 };
 

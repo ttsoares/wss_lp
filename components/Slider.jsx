@@ -18,7 +18,7 @@ export default function Slider({ testimonials }) {
       );
     }, autorotateTiming);
     return () => clearInterval(interval);
-  }, [active, autorotate]);
+  }, [active, autorotate, testimonials.length]);
 
   const heightFix = () => {
     if (testimonialsRef.current && testimonialsRef.current.parentElement)

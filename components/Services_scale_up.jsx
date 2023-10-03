@@ -2,7 +2,6 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import the icons you need
 import {
   faLock,
   faBriefcase,
@@ -16,7 +15,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="flex flex-col items-center justify-center w-full space-y-5 border-2 border-red-500 h-fit"
+      className="flex flex-col items-center justify-center w-full space-y-5 h-fit"
     >
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         SERVIÇOS
@@ -25,7 +24,7 @@ const Services = () => {
         <div className="flex justify-center w-full space-x-5">
           <div className="relative w-1/5 h-80 group ">
             {/* Front */}
-            <div className="absolute inset-0 w-full h-full bg-[#1B1B1B] peer flex flex-col items-center justify-start space-y-10 group-hover:scale-110 transition-transform  duration-300 ease-out">
+            <div className="absolute inset-0 w-full h-full bg-[#1B1B1B] peer flex flex-col items-center justify-start space-y-10 group-hover:scale-110 transition transform  duration-300 ease-out">
               <FontAwesomeIcon
                 icon={faLightbulb}
                 className="p-5 mt-5 text-4xl text-[#A48661]"

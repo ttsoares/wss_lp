@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 
+import Divider from "./Divider";
+
 const Hero = () => {
   return (
     <>
@@ -19,14 +21,8 @@ const Hero = () => {
           <h1 className="font-semibold">SEU MUNDO</h1>
         </div>
       </div>
-      <div className="flex justify-end w-ful h-28">
-        <Image
-          src="/images/marcadagua.png"
-          alt="backgound"
-          width={180}
-          height={80}
-        />
-      </div>
+      <p id="services"></p>
+      <Divider />
     </>
   );
 };

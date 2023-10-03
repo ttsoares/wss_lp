@@ -1,14 +1,15 @@
+"use client";
+
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Divider from "@/components/Divider";
 import Testimony from "@/components/Testimony";
 
-// import the icons you need
 import {
   faBookOpen,
   faUserShield,
-  faArrowTrendUp,
   faChartLine,
   faPlus,
   faFolderTree,
@@ -17,15 +18,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { faClone, faBookmark } from "@fortawesome/free-regular-svg-icons";
-import Image from "next/image";
 
 const Formation = () => {
+  function form() {
+    window.open("https://forms.gle/mi1LWtKuEiTbjZ7AA");
+  }
+
   return (
-    <section id="formations" className="w-full mt-20 h-fit">
+    <section className="w-full mt-20 h-fit">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         FORMAÇÕES
       </h1>
-      <div className=" flex flex-col w-[95%] rounded-2xl h-full bg-[#1b1b1b] mx-auto">
+      <div className=" flex flex-col w-[95%] rounded-2xl h-full bg-[#1b1b1b] mx-auto mb-14">
         <div className="p-10 space-y-8">
           <p className="font-bold text-lg text-[#A48660]">
             Percurso em Segurança Ofensiva e Operações em Cibersegurança
@@ -108,10 +112,9 @@ const Formation = () => {
           <Testimony />
         </div>
         <div className="w-full">
-          <a
-            href="https://forms.gle/mi1LWtKuEiTbjZ7AA"
-            target="_blank"
-            className="flex mt-16 mx-auto w-1/4 rounded-2xl justify-center p-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300"
+          <h3
+            onClick={form}
+            className="flex mt-16 mx-auto w-1/4 rounded-2xl justify-center p-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer"
           >
             <FontAwesomeIcon
               icon={faPlus}
@@ -120,7 +123,7 @@ const Formation = () => {
             <span className="ml-3 font-semibold">
               INSCREVA-SE PARA PERCURSO WSS
             </span>
-          </a>
+          </h3>
         </div>
         {/* divider */}
         <div className="mt-14 mb-14 border-b-2 border-[#4c3f2e] w-[95%] mx-auto h-1"></div>
@@ -159,14 +162,8 @@ const Formation = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end w-full mt-24 h-28">
-        <Image
-          src="/images/marcadagua.png"
-          alt="backgound"
-          width={180}
-          height={80}
-        />
-      </div>
+      <p id="podcast"></p>
+      <Divider />
     </section>
   );
 };

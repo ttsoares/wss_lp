@@ -43,10 +43,11 @@ const Nav = () => {
     const targetId = href.replace(/.*\#/, "");
     // get the element by id and use scrollIntoView
     const elem = document.getElementById(targetId);
-    window.scrollTo({
-      top: elem?.getBoundingClientRect().top,
-      behavior: "smooth",
-    });
+    elem.scrollIntoView({ behavior: "smooth" });
+    // window.scrollTo({
+    //   top: elem?.getBoundingClientRect().top,
+    //   behavior: "smooth",
+    // });
   };
 
   return (

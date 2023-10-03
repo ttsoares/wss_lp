@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Divider from "@/components/Divider";
 
 //----------------------
 const Podcast = () => {
   return (
-    <section id="podcast" className="w-full h-fit">
-      <h2 className="mt-28 mb-12 text-center text-3xl w-1/5 mx-auto text-[#A48661]">
+    <section className="w-full h-fit">
+      <h2 className=" mb-12 text-center text-3xl w-1/5 mx-auto text-[#A48661]">
         PODCAST
       </h2>
       <div className="w-[90%] rounded-2xl pb-14 mx-auto bg-[#1b1b1b]">
@@ -68,13 +68,8 @@ const Podcast = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-end w-full mt-24 h-28">
-        <Image
-          src="/images/marcadagua.png"
-          alt="backgound"
-          width={180}
-          height={80}
-        />
+      <div id="aboutus" className="w-full h-10 p-10 ">
+        <Divider />
       </div>
     </section>
   );

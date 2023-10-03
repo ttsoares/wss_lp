@@ -3,7 +3,7 @@ import React from "react";
 
 const Divider = () => {
   return (
-    <div className="flex justify-end w-full h-20 py-1 my-12 ">
+    <div className="flex justify-end w-full py-1 my-12 h-28 ">
       <Image
         src="/images/marcadagua.png"
         alt="backgound"

@@ -44,10 +44,6 @@ const Nav = () => {
     // get the element by id and use scrollIntoView
     const elem = document.getElementById(targetId);
     elem.scrollIntoView({ behavior: "smooth" });
-    // window.scrollTo({
-    //   top: elem?.getBoundingClientRect().top,
-    //   behavior: "smooth",
-    // });
   };
 
   return (
@@ -64,7 +60,7 @@ const Nav = () => {
       <div className="relative flex items-center justify-end w-full w-ful md:hidden ">
         {showMenu ? (
           <div
-            className="absolute top-0 right-0 flex flex-col items-end w-3/4 h-screen ml-5 bg-black text-amber-400"
+            className="absolute top-0 right-0 flex flex-col items-end w-3/4 h-screen ml-5 bg-[#1b1b1b] text-[#a48661]"
             onClick={() => setShowMenu(!showMenu)}
           >
             <svg
@@ -86,7 +82,7 @@ const Nav = () => {
                 {MENU_LIST.map((item, index) => (
                   <div
                     key={index}
-                    className="mb-5 text-amber-400 hover:cursor-pointer"
+                    className="mb-5 text-[#a48661] hover:cursor-pointer"
                   >
                     <Link href={item.href}>{item.text}</Link>
                   </div>

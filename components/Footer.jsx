@@ -31,7 +31,7 @@ const Footer = () => {
 
   return (
     <div className="w-full h-48 mt-16 bg-black">
-      <div className="flex items-center justify-between w-1/4 h-24 ml-10">
+      <div className="flex items-center justify-between w-full md:w-1/4 h-24 md:ml-10">
         <h3 onClick={ytb}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

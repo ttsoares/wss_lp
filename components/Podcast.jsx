@@ -6,23 +6,25 @@ import Divider from "@/components/Divider";
 //----------------------
 const Podcast = () => {
   return (
-    <section className="w-full h-fit">
-      <h2 className=" mb-12 text-center text-3xl w-1/5 mx-auto text-[#A48661]">
+    <section className="w-full mt-28 md:mt-0 h-fit">
+      <h2 className="mb-12 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         PODCAST
       </h2>
       <div className="w-[90%] rounded-2xl pb-14 mx-auto bg-[#1b1b1b]">
-        <div className="flex items-center justify-center w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center w-full">
           <div className="object-center">
             <Image
               src="/images/podcast.png"
               alt="podcast"
               width={200}
               height={200}
-              className="p-5 mr-8"
+              className="p-5 md:mr-8"
             />
           </div>
-          <div className="w-[45%] space-y-6 text-justify m-14">
-            <p className="text-xl mb-8 text-[#A48661]">Café Seguro</p>
+          <div className="w-[90%] mx-auto md:mx-0 md:w-[45%] space-y-6 text-justify md:m-14">
+            <p className="text-xl mb-8 text-[#A48661] text-center md:text-left">
+              Café Seguro
+            </p>
             <p className="tracking-wider text-white">
               O Café Seguro Podcast é um dos produtos da WSS Security, empresa
               que preza pela abordagem científica, ética e responsável da
@@ -68,7 +70,7 @@ const Podcast = () => {
           </a>
         </div>
       </div>
-      <div id="aboutus" className="w-full h-10 p-10 ">
+      <div id="aboutus" className="w-full md:h-10 md:p-10 ">
         <Divider />
       </div>
     </section>

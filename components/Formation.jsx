@@ -29,12 +29,12 @@ const Formation = () => {
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         FORMAÇÕES
       </h1>
-      <div className=" flex flex-col w-[95%] rounded-2xl h-full bg-[#1b1b1b] mx-auto mb-14">
-        <div className="p-10 space-y-8">
+      <div className=" flex flex-col w-[90%] rounded-2xl h-full bg-[#1b1b1b] mx-auto mb-14">
+        <div className="p-5 space-y-8">
           <p className="font-bold text-lg text-[#A48660]">
             Percurso em Segurança Ofensiva e Operações em Cibersegurança
           </p>
-          <p className="tracking-wider text-white">
+          <p className="tracking-wider text-white text-justify md:text-left">
             Com o objetivo de possibilitar, por meio de um espaço singular de
             experimentações e conhecimento, o desenvolvimento de capacidades no
             contexto de Segurança da Informação - mais especificamente nas áreas
@@ -44,9 +44,11 @@ const Formation = () => {
             supervisões que devem ser realizadas como requisitos para a
             conclusão da formação.{" "}
           </p>
-          <p className="font-bold text-lg text-[#A48660]">Eixos</p>
+          <p className="font-bold text-center md:text-left text-lg text-[#A48660]">
+            Eixos
+          </p>
         </div>
-        <div className="flex justify-around mx-auto w-[80%]">
+        <div className="flex flex-col md:flex-row justify-around mx-auto w-full md:w-[80%]">
           <div className="text-center">
             <FontAwesomeIcon
               icon={faBookOpen}
@@ -105,7 +107,7 @@ const Formation = () => {
           </div>
         </div>
         <div className="mt-14 mb-16 border-b-2 border-[#4c3f2e] w-[95%] mx-auto h-1"></div>
-        <h2 className="text-[#A48661] text-start text-lg ml-20 mb-10">
+        <h2 className="text-[#A48661] text-center md:text-start text-lg md:ml-20 mb-10">
           Depoimentos
         </h2>
         <div className="w-full ">
@@ -114,7 +116,7 @@ const Formation = () => {
         <div className="w-full">
           <h3
             onClick={form}
-            className="flex mt-16 mx-auto w-1/4 rounded-2xl justify-center p-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer"
+            className="flex mt-16 mx-auto w-fit rounded-2xl justify-center p-3 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer"
           >
             <FontAwesomeIcon
               icon={faPlus}
@@ -127,18 +129,18 @@ const Formation = () => {
         </div>
         {/* divider */}
         <div className="mt-14 mb-14 border-b-2 border-[#4c3f2e] w-[95%] mx-auto h-1"></div>
-        <div className="w-[70%] mx-auto">
-          <h2 className="text-[#A48661] text-xl mb-5 font-semibold">
+        <div className="w-[80%] md:w-[70%] mx-auto">
+          <h2 className="text-[#A48661] text-center md:text-left md:text-xl mb-5 font-semibold">
             Eixos Adicionais de Formação
           </h2>
-          <p className="text-lg text-white">
+          <p className="text-lg text-white text-justify md:text-left">
             Todas as pessoas que concluem o Percurso estão aptas a fazer
             formações de curta duração chamadas Eixos Adicionais de Formação,
             que são representados por temáticas específicas relacionadas à área
             de Segurança Ofensiva e/ou Operações de Cibersegurança.{" "}
           </p>
         </div>
-        <div className="flex mt-16 mb-10 w-[60%] mx-auto justify-between items-center">
+        <div className="flex mt-16 mb-10 w-[80%] mx-auto justify-between items-center text-sm">
           <div className="text-center">
             <FontAwesomeIcon
               icon={faFolderTree}

@@ -6,13 +6,13 @@ import Divider from "@/components/Divider";
 const About = () => {
   return (
     <section className="w-full mt-20 h-fit">
-      <h2 className="mt-10 mb-12 text-center text-3xl w-1/5 mx-auto text-[#A48661]">
+      <h2 className="mt-10 mb-12 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         SOBRE NÓS
       </h2>
 
-      <div className="w-[90%] flex justify-around items-center rounded-2xl p-5 mx-auto bg-[#1b1b1b] mb-10">
-        <div className="w-2/3 mx-auto ml-24">
-          <p className="text-xl text-[#A48661] mb-6">
+      <div className="w-[90%] flex flex-col md:flex-row justify-around items-center rounded-2xl p-5 mx-auto bg-[#1b1b1b] mb-10">
+        <div className="w-full mx-auto md:w-2/3 md:ml-24">
+          <p className="text-lg md:text-xl text-[#A48661] mb-6">
             A segurança digital do seu mundo
           </p>
           <p className="tracking-widest text-justify text-white">
@@ -28,7 +28,7 @@ const About = () => {
             SEU mundo.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/3">
+        <div className="flex flex-col items-center justify-centerw-full md:w-1/3">
           <Image
             src="/images/dalalana.jpg"
             alt="Dalalana"

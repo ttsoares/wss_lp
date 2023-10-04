@@ -15,5 +15,11 @@
 }
 .swiper-pagination {
   background-color: transparent;
-  width: 100px;
+  margin-left: 180px;
+}
+
+@media (max-width: 960px) {
+  .swiper-pagination {
+    margin-left: 0px;
+  }
 }

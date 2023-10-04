@@ -13,7 +13,7 @@ import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full space-y-5 h-fit mt-28 md:mt-0">
+    <section className="flex flex-col items-center justify-center w-full space-y-5 h-fit mt-28">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         SERVIÇOS
       </h1>

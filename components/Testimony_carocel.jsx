@@ -4,24 +4,33 @@ import React from "react";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+import "./carocel.css";
+
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+const pagination = {
+  clickable: true,
+  renderBullet: function (index, className) {
+    return '<span class="' + className + '">' + "-" + "</span>";
+  },
+};
 
 //----------------------
 const Testimony = () => {
   return (
     <div className="w-full px-20 ml-20 h-fit">
       <Swiper
-        spaceBetween={30}
-        loopedSlides={3}
+        pagination={pagination}
+        slidesPerView={1}
+        loop={true}
         centeredSlides={true}
         autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
+          delay: 6000,
+          disableOnInteraction: true,
         }}
         rewind={false}
         navigation={false}

@@ -12,7 +12,7 @@ const Podcast = () => {
       </h2>
       <div className="w-[90%] rounded-2xl pb-14 mx-auto bg-[#1b1b1b]">
         <div className="flex flex-col md:flex-row items-center justify-center w-full">
-          <div className="object-center">
+          <div className="object-center transition trasnform  hover:scale-125 duration-300 md:mr-20">
             <Image
               src="/images/podcast.png"
               alt="podcast"
@@ -40,33 +40,35 @@ const Podcast = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center space-x-5">
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-5">
           <a
             href="https://forms.gle/mi1LWtKuEiTbjZ7AA"
             target="_blank"
-            className="flex mt-16 rounded-2xl justify-center px-4 py-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300"
+            className="flex mt-16 rounded-2xl justify-center w-fit px-4 py-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 border-2"
           >
             <Image
               src="/images/youtube.svg"
               alt="Youtube"
               width={25}
               height={25}
+              className="mr-3"
             />
 
-            <span className="ml-3 font-semibold">ASSISTIR NO YOUTUBE</span>
+            <span className="md:ml-3 font-semibold">ASSISTIR NO YOUTUBE</span>
           </a>
           <a
             href="https://forms.gle/mi1LWtKuEiTbjZ7AA"
             target="_blank"
-            className="flex mt-16 rounded-2xl justify-center px-4 py-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300"
+            className="flex mt-16 rounded-2xl justify-center w-fit px-4 py-1 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 border-2"
           >
             <Image
               src="/images/spotify.svg"
               alt="Spotify"
               width={25}
               height={25}
+              className="mr-3"
             />
-            <span className="ml-3 font-semibold">OUVIR NO SPOTIFY</span>
+            <span className="md:ml-3 font-semibold">OUVIR NO SPOTIFY</span>
           </a>
         </div>
       </div>

@@ -116,7 +116,7 @@ const Formation = () => {
         <div className="w-full">
           <h3
             onClick={form}
-            className="flex mt-16 mx-auto w-fit rounded-2xl justify-center p-3 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer"
+            className="flex mt-16 mx-auto w-fit rounded-2xl justify-center p-3 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer border-2"
           >
             <FontAwesomeIcon
               icon={faPlus}

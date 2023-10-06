@@ -48,7 +48,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`fixed top-0 z-30 flex justify-between w-full h-24 ${
+      className={`fixed top-0 z-30 flex justify-between w-full h-16 md:h-24 ${
         top ? "bg-transparent" : "bg-[#715C43]/90"
       }`}
     >
@@ -57,41 +57,44 @@ const Nav = () => {
       </div>
 
       {/* Burger menu */}
-      <div className="relative flex items-center justify-end w-full w-ful md:hidden ">
+      <div className="relative flex items-center justify-end w-full md:hidden ">
         {showMenu ? (
-          <div
-            className="absolute top-0 right-0 flex flex-col items-end w-3/4 h-screen ml-5 bg-[#1b1b1b] text-[#a48661]"
-            onClick={() => setShowMenu(!showMenu)}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-8 h-8 mt-8 mr-7"
+          <>
+            <div className="absolute w-full h-screen -left-[140px] top-0  bg-black/50"></div>
+            <div
+              className="absolute top-0 -right-8 flex flex-col items-end w-2/3 h-screen ml-5 bg-[#1b1b1b] text-[#a48661] border-l-2 border-[#a48661] z-20"
+              onClick={() => setShowMenu(!showMenu)}
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-            <div className="w-full ">
-              <div className="flex flex-col mt-5 ml-8 font-bold">
-                {MENU_LIST.map((item, index) => (
-                  <div
-                    key={index}
-                    className="mb-5 text-[#a48661] hover:cursor-pointer"
-                  >
-                    <Link href={item.href}>{item.text}</Link>
-                  </div>
-                ))}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-8 h-8 mt-4 mr-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+              <div className="w-full ">
+                <div className="flex flex-col mt-5 ml-8 font-bold">
+                  {MENU_LIST.map((item, index) => (
+                    <div
+                      key={index}
+                      className="mb-5 text-[#a48661] hover:cursor-pointer hover:animate-pulse"
+                    >
+                      <Link href={item.href}>{item.text}</Link>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          </>
         ) : (
-          <div className="pr-7" onClick={() => setShowMenu(!showMenu)}>
+          <div className="pr-1" onClick={() => setShowMenu(!showMenu)}>
             <Image
               src="/images/icon-hamburger.svg"
               alt="menu"
@@ -103,15 +106,15 @@ const Nav = () => {
         )}
       </div>
       {/* desktop menu */}
-      <div className="my-auto ">
-        <div className="flex items-center justify-start w-full ml-8 ">
-          <div className="hidden md:flex">
+      <div className="flex items-center ">
+        <div className="flex items-center justify-start ml-5 w-fit flex-nowrap">
+          <div className="hidden md:flex  w-fit flex-nowrap">
             {MENU_LIST.map((item, index) => (
               <div
                 className="flex flex-col items-center justify-center"
                 key={index}
               >
-                <div className="h-3 mb-5 text-lg font-semibold text-black mx-7 peer hover:cursor-pointer">
+                <div className="h-3 mb-5 text-lg font-semibold text-black mx-4 peer hover:cursor-pointer">
                   <a href={item.href} onClick={SmoothScroll}>
                     {item.text}
                   </a>

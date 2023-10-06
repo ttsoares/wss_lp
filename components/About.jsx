@@ -21,7 +21,7 @@ const About = () => {
             &quot;única voz&quot; deveria ser formada por um conjunto de pessoas
             que compartilhassem uma forma de pensar. Desde então, vejo que a
             forma de pensar foi e é o grande diferencial da WSS. Ao longo desses
-            anos, dezenas de pessoas deram voz à WSS, seja na pesquisa, no
+            anos dezenas de pessoas deram voz à WSS, seja na pesquisa, no
             ensino, no aprendizado, no oferecimento de serviços, na inovação, ou
             em tudo isso conjuntamente. Tantas pessoas, tantas ideias, tantos
             anseios... é por isso que trabalhamos para a segurança digital do

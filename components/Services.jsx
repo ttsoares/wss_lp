@@ -7,7 +7,7 @@ import servs from "/data/services.js";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full space-y-5 h-fit mt-28">
+    <section className="flex flex-col items-center justify-center w-full space-y-5 h-fit mt-20">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         SERVIÇOS
       </h1>

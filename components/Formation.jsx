@@ -25,7 +25,7 @@ const Formation = () => {
   }
 
   return (
-    <section className="w-full mt-20 h-fit">
+    <section className="w-full mt-5 h-fit">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         FORMAÇÕES
       </h1>

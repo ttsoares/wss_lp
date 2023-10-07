@@ -114,12 +114,12 @@ const Nav = () => {
                 className="flex flex-col items-center justify-center"
                 key={index}
               >
-                <div className="h-3 mb-5 text-lg font-semibold text-black mx-4 peer hover:cursor-pointer">
+                <div className="h-3 mb-5 text-lg font-semibold text-black mx-4 peer hover:cursor-pointer hover:animate-bounce">
                   <a href={item.href} onClick={SmoothScroll}>
                     {item.text}
                   </a>
                 </div>
-                <div className="invisible w-16 h-0.5 mx-4 -mt-1 bg-black rounded-lg peer-hover:visible"></div>
+                <div className="invisible w-16 h-0.5 mx-4 -mt-2 bg-black rounded-lg peer-hover:visible"></div>
               </div>
             ))}
           </div>

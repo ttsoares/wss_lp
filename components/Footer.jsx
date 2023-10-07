@@ -114,7 +114,7 @@ const Footer = () => {
           </svg>
         </a>
       </div>
-      <p className="mt-5 text-center text-xl text-[#A48661]">
+      <p className="mt-5 hover:animate-ping text-center text-xl text-[#A48661]">
         WSS Security ™ 2023
       </p>
     </div>

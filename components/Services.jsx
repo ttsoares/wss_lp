@@ -29,9 +29,9 @@ const Services = () => {
                     {elm.title}
                   </h2>
                 </div>
-                <div className="absolute inset-0 h-full w-full rounded-xl bg-[#383532] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] ">
+                <div className="absolute inset-0 h-full w-full rounded-xl bg-[#292724] px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden] ">
                   <div className="flex flex-col items-center justify-center min-h-full">
-                    <p className="text-[#A48661] p-2 text-center">{elm.text}</p>
+                    <p className="text-[#c09d72] p-2 text-center">{elm.text}</p>
                   </div>
                 </div>
               </div>

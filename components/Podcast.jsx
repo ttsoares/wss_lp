@@ -21,7 +21,7 @@ const Podcast = () => {
               className="p-5 md:mr-8"
             />
           </div>
-          <div className="w-[90%] mx-auto md:mx-0 md:w-[45%] space-y-6 text-justify md:m-14">
+          <div className="w-[90%] mx-auto md:mx-0 md:w-[45%] space-y-6 text-left md:m-14">
             <p className="text-xl mb-8 text-[#A48661] text-center md:text-left">
               Café Seguro
             </p>
@@ -48,7 +48,7 @@ const Podcast = () => {
           >
             <Image
               src="/images/youtube.svg"
-              alt="Youtube"
+              alt="watch at Youtube"
               width={25}
               height={25}
               className="mr-3"
@@ -63,7 +63,7 @@ const Podcast = () => {
           >
             <Image
               src="/images/spotify.svg"
-              alt="Spotify"
+              alt="Listen at Spotify"
               width={25}
               height={25}
               className="mr-3"

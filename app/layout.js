@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${lato.className} w-screen overflow-y-scroll overflow-x-hidden bg-gradient-to-b from-black to-[#423A33]`}
       >

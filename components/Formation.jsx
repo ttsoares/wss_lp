@@ -44,9 +44,9 @@ const Formation = () => {
             supervisões que devem ser realizadas como requisitos para a
             conclusão da formação.{" "}
           </p>
-          <p className="font-bold text-center md:text-left text-lg text-[#A48660]">
+          <h2 className="font-bold text-center md:text-left text-lg text-[#A48660]">
             Eixos
-          </p>
+          </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-around mx-auto w-full md:w-[80%]">
           <div className="text-center">
@@ -89,18 +89,18 @@ const Formation = () => {
         <div className="mt-14 mb-32 border-b-2 border-[#4c3f2e] w-[95%] mx-auto h-1"></div>
         <div className="flex justify-between mx-auto w-[90%]">
           <div className="text-center ">
-            <p className="pb-6 text-6xl text-[#A48661] transition trasnform hover:text-[#cba87a] hover:scale-110 duration-300 ">
+            <h3 className="pb-6 text-6xl text-[#A48661] transition trasnform hover:text-[#cba87a] hover:scale-110 duration-300 ">
               90%
-            </p>
+            </h3>
             <p className="text-white">
               Dos alunos concluintes do Percurso atuam na área de segurança
             </p>
           </div>
 
           <div className="text-center ">
-            <p className="pb-6 text-6xl text-[#A48661] transition trasnform hover:text-[#cba87a] hover:scale-110 duration-300">
+            <h3 className="pb-6 text-6xl text-[#A48661] transition trasnform hover:text-[#cba87a] hover:scale-110 duration-300">
               60%
-            </p>
+            </h3>
             <p className="text-white">
               Dos alunos atuaram ou atuam na WSS Security
             </p>
@@ -114,7 +114,7 @@ const Formation = () => {
           <Testimony />
         </div>
         <div className="w-full">
-          <h3
+          <div
             onClick={form}
             className="flex mt-16 mx-auto w-fit rounded-2xl justify-center p-3 text-black text-sm items-center bg-[#A48661] transition trasnform  hover:scale-125 duration-300 hover:cursor-pointer border-2"
           >
@@ -125,7 +125,7 @@ const Formation = () => {
             <span className="ml-3 font-semibold">
               INSCREVA-SE PARA PERCURSO WSS
             </span>
-          </h3>
+          </div>
         </div>
         {/* divider */}
         <div className="mt-14 mb-14 border-b-2 border-[#4c3f2e] w-[95%] mx-auto h-1"></div>

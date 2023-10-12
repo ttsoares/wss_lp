@@ -24,7 +24,7 @@ const pagination = {
 //----------------------
 const Testimony = () => {
   return (
-    <div className="w-full md:px-20 md:ml-20 h-fit">
+    <section className="w-full md:px-20 md:ml-20 h-fit">
       <Swiper
         pagination={pagination}
         slidesPerView={1}
@@ -46,7 +46,7 @@ const Testimony = () => {
                 <Image
                   className="object-fill w-40 h-40 mx-auto rounded-full"
                   src={depo.img}
-                  alt="image slide 1"
+                  alt={`image slide ${index}`}
                   width={200}
                   height={200}
                 />
@@ -64,7 +64,7 @@ const Testimony = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ const About = () => {
           <p className="text-lg md:text-xl text-[#A48661] mb-6">
             A segurança digital do seu mundo
           </p>
-          <p className="tracking-widest text-justify text-white">
+          <p className="tracking-widest text-left text-white">
             A WSS é mais do que uma empresa. A WSS é uma voz uníssona da
             Segurança da Informação. No final de 2011, decidi que essa
             &quot;única voz&quot; deveria ser formada por um conjunto de pessoas

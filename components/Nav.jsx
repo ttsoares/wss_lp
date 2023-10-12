@@ -53,14 +53,14 @@ const Nav = () => {
       }`}
     >
       <div className="flex items-center justify-start ml-5">
-        <Image src="/images/logo.png" alt="logo" width={160} height={80} />
+        <Image src="/images/logo.png" alt="WSS logo" width={160} height={80} />
       </div>
 
       {/* Burger menu */}
       <div className="relative flex items-center justify-end w-full md:hidden ">
         {showMenu ? (
           <>
-            <div className="absolute w-full h-screen -left-[140px] top-0  bg-black/50"></div>
+            <div className="absolute w-full h-screen -left-[120px] top-0  bg-black/50"></div>
             <div
               className="absolute top-0 -right-8 flex flex-col items-end w-2/3 h-screen ml-5 bg-[#1b1b1b] text-[#a48661] border-l-2 border-[#a48661] z-20"
               onClick={() => setShowMenu(!showMenu)}

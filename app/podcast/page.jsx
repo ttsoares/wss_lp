@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "next/image";
 
-import Divider from "@/components/Divider";
-
 //----------------------
 const Podcast = () => {
   return (
-    <section className="w-full mt-28 md:mt-0 h-fit">
-      <h2 className="mb-12 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
+    <section className="w-full mt-28 md:mt-20">
+      <h2 className="mb-8 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         PODCAST
       </h2>
       <div className="w-[90%] rounded-2xl pb-14 mx-auto bg-[#1b1b1b]">
@@ -21,7 +19,7 @@ const Podcast = () => {
               className="p-5 md:mr-8"
             />
           </div>
-          <div className="w-[90%] mx-auto md:mx-0 md:w-[45%] space-y-6 text-left md:m-14">
+          <div className="w-[90%] mx-auto md:mx-0 md:w-[45%] space-y-5 text-left md:m-10">
             <p className="text-xl mb-8 text-[#A48661] text-center md:text-left">
               Café Seguro
             </p>
@@ -71,9 +69,6 @@ const Podcast = () => {
             <span className="md:ml-3 font-semibold">OUVIR NO SPOTIFY</span>
           </a>
         </div>
-      </div>
-      <div id="aboutus" className="w-full md:h-10 md:p-10 ">
-        <Divider />
       </div>
     </section>
   );

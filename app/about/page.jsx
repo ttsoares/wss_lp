@@ -1,11 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import Divider from "@/components/Divider";
-
 const About = () => {
   return (
-    <section className="w-full mt-20 h-fit">
+    <section className="w-full mt-20 h-screen">
       <h2 className="mt-10 mb-12 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         SOBRE NÓS
       </h2>
@@ -40,7 +38,6 @@ const About = () => {
           <p className="text-[#A48661]">CEO WSS Security</p>
         </div>
       </div>
-      <Divider />
     </section>
   );
 };

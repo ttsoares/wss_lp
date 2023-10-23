@@ -1,56 +1,37 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export const MENU_LIST = [
-  { text: "HOME", href: "#home" },
-  { text: "SERVIÇOS", href: "#services" },
-  { text: "FORMAÇÕES", href: "#formations" },
-  { text: "PODCAST", href: "#podcast" },
-  { text: "SOBRE NÓS", href: "#aboutus" },
+  { text: "HOME", href: "/" },
+  { text: "SERVIÇOS", href: "/services" },
+  { text: "FORMAÇÕES", href: "/formation" },
+  { text: "PODCAST", href: "/podcast" },
+  { text: "SOBRE NÓS", href: "/about" },
 ];
 
 //-----------------
 const Nav = () => {
-  const [top, setTop] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
-  const handleScroll = () => {
-    const position = window.scrollY;
-    if (position > 0) {
-      setTop(false);
-    } else {
-      setTop(true);
-    }
-  };
+  const [bgNav, setBgNav] = useState("bg-transparent");
 
+  const pathname = usePathname();
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    if (pathname.length > 1) {
+      setBgNav("bg-[#a48661]");
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const SmoothScroll = (e) => {
-    e.preventDefault();
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId);
-    elem.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <nav
-      className={`fixed top-0 z-30 flex justify-between w-full h-16 md:h-24 ${
-        top ? "bg-transparent" : "bg-[#715C43]/90"
-      }`}
+      className={`fixed top-0 z-30 flex justify-between w-full h-16 md:h-20 ${bgNav}`}
     >
       <div className="flex items-center justify-start ml-5">
         <Image src="/images/logo.png" alt="WSS logo" width={160} height={80} />
@@ -94,7 +75,10 @@ const Nav = () => {
             </div>
           </>
         ) : (
-          <div className="pr-1" onClick={() => setShowMenu(!showMenu)}>
+          <div
+            className="pr-1 bg-[#a48661]"
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <Image
               src="/images/icon-hamburger.svg"
               alt="menu"
@@ -115,9 +99,7 @@ const Nav = () => {
                 key={index}
               >
                 <div className="h-3 mb-5 text-lg font-semibold text-black mx-4 peer hover:cursor-pointer hover:animate-bounce">
-                  <a href={item.href} onClick={SmoothScroll}>
-                    {item.text}
-                  </a>
+                  <a href={item.href}>{item.text}</a>
                 </div>
                 <div className="invisible w-16 h-0.5 mx-4 -mt-2 bg-black rounded-lg peer-hover:visible"></div>
               </div>

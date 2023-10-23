@@ -30,8 +30,8 @@ const Footer = () => {
   }
 
   return (
-    <section className="w-full h-48 mt-16 bg-black">
-      <div className="flex items-center justify-between w-full md:w-1/4 h-24 md:ml-10 px-10 md:px-0">
+    <section className="w-full bg-black">
+      <footer className="flex items-center justify-between w-full md:w-1/4 h-20 md:ml-10 px-10 md:px-0">
         <div onClick={ytb}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,8 +113,8 @@ const Footer = () => {
           </svg>
           <p className="hidden">.</p>
         </a>
-      </div>
-      <p className="mt-5 hover:animate-ping text-center text-xl text-[#A48661]">
+      </footer>
+      <p className="mt-1 hover:animate-ping text-center text-xl text-[#A48661]">
         WSS Security ™ 2023
       </p>
     </section>

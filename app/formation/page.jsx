@@ -4,7 +4,6 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Divider from "@/components/Divider";
 import Testimony from "@/components/Testimony";
 
 import {
@@ -25,7 +24,7 @@ const Formation = () => {
   }
 
   return (
-    <section className="w-full mt-5 h-fit">
+    <section className="w-full h-fit mt-10 bg-gradient-to-b from-black to-[#423A33]">
       <h1 className="py-10 mx-auto text-3xl text-center text-[#A48661]">
         FORMAÇÕES
       </h1>
@@ -164,8 +163,6 @@ const Formation = () => {
           </div>
         </div>
       </div>
-      <p id="podcast"></p>
-      <Divider />
     </section>
   );
 };

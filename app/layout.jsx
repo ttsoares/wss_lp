@@ -17,9 +17,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR">
+    <html
+      lang="pt-BR"
+      className="w-screen h-screen bg-gradient-to-b from-black to-[#423A33]"
+    >
       <body
-        className={`${lato.className} w-screen overflow-y-scroll overflow-x-hidden bg-gradient-to-b from-black to-[#423A33]`}
+        className={`${lato.className} w-full flex flex-col min-h-screen overflow-y-auto overflow-x-hidden`}
       >
         <Nav />
         {children}

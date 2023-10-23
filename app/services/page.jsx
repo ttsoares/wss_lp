@@ -6,7 +6,7 @@ import servs from "/data/services.js";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full space-y-2  mt-28 md:mt-20 mb-5">
+    <section className="flex flex-col h-screen items-center justify-center w-full space-y-2  mt-28 md:mt-30 mb-5 bg-gradient-to-b from-black to-[#423A33]">
       <h1 className=" mx-auto text-3xl text-center text-[#A48661]">SERVIÇOS</h1>
 
       <div className="flex w-full justify-center">

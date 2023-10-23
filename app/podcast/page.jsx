@@ -4,7 +4,7 @@ import Image from "next/image";
 //----------------------
 const Podcast = () => {
   return (
-    <section className="w-full mt-28 md:mt-20">
+    <section className="w-full h-screen mt-28 md:mt-24">
       <h2 className="mb-8 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         PODCAST
       </h2>

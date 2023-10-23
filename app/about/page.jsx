@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="w-full mt-20 h-screen">
+    <section className="w-full mt-24 h-screen">
       <h2 className="mt-10 mb-12 text-center text-3xl w-full md:w-1/5 mx-auto text-[#A48661]">
         SOBRE NÓS
       </h2>
